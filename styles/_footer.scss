@@ -1,0 +1,23 @@
+footer {
+  background: black;
+  color: white;
+}
+
+.footer {
+  width: 80%;
+  margin: auto;
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer .logo {
+  font-size: $header1;
+  font-weight: 400;
+}
+
+.footer .creator {
+  font-size: $header2;
+  font-weight: 400;
+}

@@ -1,0 +1,75 @@
+.hero {
+  min-height: 90vh;
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin-left: auto;
+}
+
+.hero-text {
+  flex: 1 1 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.hero-text h2 {
+  font-size: $header2;
+  font-weight: 400;
+}
+
+.hero-text h3 {
+  font-size: $header3;
+  padding: 6rem 0;
+  font-weight: 400;
+}
+
+.hero-text button {
+  background: black;
+  padding: 0.7rem 2rem;
+  font-family: inherit;
+  font-size: $header2;
+  font-weight: 400;
+  border: none;
+  border-radius: 1rem;
+}
+
+.hero-text a {
+  color: white;
+}
+
+.hero-image {
+  flex: 1 1 40rem;
+}
+
+.hero-jobs {
+  min-height: 90vh;
+  max-width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media screen and (max-width: 1024px) {
+  .hero {
+    min-width: 100%;
+    margin: 0px;
+    min-height: 90vh;
+    background: url(/img/SteveJobsTransparent.jpg) no-repeat;
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+  }
+
+  .hero-image {
+    display: none;
+  }
+
+  .hero-text {
+    background: rgba(255, 255, 255, 0.575);
+    max-width: 90%;
+    padding: 1.5rem;
+    margin: 1rem auto;
+  }
+}

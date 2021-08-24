@@ -1,0 +1,65 @@
+.quotes {
+  width: 80%;
+  margin: auto;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.quote-header h2 {
+  font-size: $header2;
+  font-weight: 400;
+  padding: 2rem;
+}
+
+.quote-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5rem 10rem;
+  padding-bottom: 6rem;
+}
+
+.quote-text {
+  box-shadow: 0px 10px 20px 0px #00000059;
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote-p {
+  font-size: $text;
+}
+
+@media screen and (max-width: 1024px) {
+  .quote-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5rem 10rem;
+  }
+  .quote-text {
+    box-shadow: 0px 2px 10px 0px #00000059;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .quote-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem 2rem;
+  }
+
+  .quote-text {
+    box-shadow: 0px 2px 10px 0px #00000059;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

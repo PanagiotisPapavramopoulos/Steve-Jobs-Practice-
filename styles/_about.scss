@@ -1,0 +1,65 @@
+.about {
+  background: black;
+  color: white;
+}
+
+.about-wrapper {
+  width: 90%;
+  margin-right: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-image {
+  flex: 1 1 40rem;
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.about-text {
+  flex: 1 1 40rem;
+  padding-left: 10rem;
+}
+
+.about-text h2 {
+  font-size: $header2;
+  font-weight: 400;
+  margin: 3rem 0rem;
+}
+
+.about-text p {
+  font-size: $text;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 1280px) {
+  .about-text {
+    padding-left: 6rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .about {
+    width: 100%;
+  }
+
+  .about-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-image {
+    // width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: bottom;
+  }
+}

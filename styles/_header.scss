@@ -1,0 +1,39 @@
+.main-header {
+  width: 80%;
+  margin: auto;
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  flex: 3 1 40rem;
+  font-size: $header1;
+  font-weight: 400;
+}
+
+.menu {
+  flex: 1 1 40rem;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu li {
+  padding-left: 5rem;
+  font-size: $header2;
+  font-weight: 400;
+}
+
+.menu a {
+  color: black;
+}
+
+@media screen and (max-width: 1024px) {
+  .main-header {
+    max-height: 10vh;
+  }
+}
