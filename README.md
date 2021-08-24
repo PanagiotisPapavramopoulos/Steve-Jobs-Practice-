@@ -1,6 +1,7 @@
 # Practice HTML / SASS #
 
 This is a Responsive Web Page about Steve Jobs
+
 Technologies: HTML / CSS (SASS)
 
 Future Updates
